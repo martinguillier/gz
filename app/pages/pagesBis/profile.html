@@ -1,0 +1,50 @@
+<div class="jumbotron text-center">
+    <p>{{message}}</p>
+
+    <p>{{myJobs.myJobs}}</p>
+    <p>{{myJobs}}</p>
+    <p>{{myJobs.myJobs.id}}</p>
+    <div class="alert alert-info">
+        <h2>{{myJob[2].intitule}}</h2>
+        <li>{{myJob[2].description}}</li>
+        <div ng-hide="knowmoreFlag">
+            <img ng-src="{{myJob[2].image}}"/>
+        </div>
+        <div ng-show="knowmoreFlag">
+            <youtube-video video-id="myJob[2].video" player-vars="playerVars"></youtube-video>
+            <p>{{myJob[2].knowmore}}
+                <button ng-click="knowmore()" class="btn btn-warning btn-xs" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </p>
+        </div>
+        <br/>
+        <button ng-click="changeJob()" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button>
+        <button ng-click="knowmore()" class="btn btn-info"><span class="glyphicon glyphicon-question-sign"></span></button>
+        <button ng-click="changeJob()" class="btn btn-success"><span class="glyphicon glyphicon-heart"></span> </button>
+        </p>
+
+    </div>
+
+    <div class="alert alert-info">
+        <h2>{{myJob[3].intitule}}</h2>
+        <li>{{myJob[3].description}}</li>
+        <div ng-hide="knowmoreFlag">
+            <img ng-src="{{myJob[3].image}}"/>
+        </div>
+        <div ng-show="knowmoreFlag">
+            <youtube-video video-id="myJob[3].video" player-vars="playerVars"></youtube-video>
+            <p>{{myJob[3].knowmore}}
+                <button ng-click="knowmore()" class="btn btn-warning btn-xs" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </p>
+        </div>
+        <br/>
+        <button ng-click="changeJob()" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button>
+        <button ng-click="knowmore()" class="btn btn-info"><span class="glyphicon glyphicon-question-sign"></span></button>
+        <button ng-click="changeJob()" class="btn btn-success"><span class="glyphicon glyphicon-heart"></span> </button>
+        </p>
+
+    </div>
+
+    <button class="btn btn-info">Refaire un questionnaire</button>
+    <button class="btn btn-info">Voir plus de metiers</button>
+
+</div>

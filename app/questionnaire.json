@@ -1,0 +1,21 @@
+[
+  {
+    "question":"Comment aimes-tu travailler ?",
+    "reponse1":"On my own",
+    "reponse2":"En petit comité",
+    "reponse3":"J'aime recontrer pleins de personnes"
+  },
+  {
+    "question":"Ou aimes-tu travailler ?",
+    "reponse1":"Au calme",
+    "reponse2":"Dans un endroit ou il se passe toujours quelque chose",
+    "reponse3":"A l'air libre"
+  },
+  {
+    "question":"Aimes-tu te servir de tes 10 doigts ?",
+    "reponse1":"Je suis très touche à tout",
+    "reponse2":"De temps en temps",
+    "reponse3":"Mouais, j'aime pas trop ça"
+  }
+]
+		

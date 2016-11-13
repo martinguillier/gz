@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+		<div class="alert alert-info">
+	<h2>{{infos[idJob].intitule}}</h2>
+	<li>{{infos[idJob].description}}</li>
+		<div ng-hide="knowmoreFlag">
+		<img ng-src="{{infos[idJob].image}}"/>
+			</div>
+	<div ng-show="knowmoreFlag">
+		<youtube-video video-id="infos[idJob].video" player-vars="playerVars"></youtube-video>
+		<p>{{infos[idJob].knowmore}}
+			<button ng-click="knowmore()" class="btn btn-warning btn-xs" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		</p>
+	</div>
+	<br/>
+		<button ng-click="changeJob()" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button>
+		<button ng-click="knowmore()" class="btn btn-info"><span class="glyphicon glyphicon-question-sign"></span></button>
+		<button ng-click="changeJob()" class="btn btn-success"><span class="glyphicon glyphicon-heart"></span> </button>
+	</p>
+
+</div>
+</div>
